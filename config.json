@@ -1,0 +1,24 @@
+{
+  "ws": {
+    "enabled": true,
+    "host": "0.0.0.0",
+    "port": 8070
+  },
+  "wss": {
+    "enabled": true,
+    "host": "0.0.0.0",
+    "port": 8071
+  },
+  "tls": {
+    "cert": "cacerts/cacert.pem",
+    "key": "cacerts/privkey.pem"
+  },
+  "maxPayload": 10485760,
+  "heartbeat": {
+    "interval": 5000,
+    "timeout": 15000
+  },
+  "log": {
+    "dir": "logs"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "cb-websocket-server",
+  "version": "1.0.0",
+  "description": "基于 Node.js 的 WebSocket 服务端，支持 WS/WSS、心跳检测、广播消息、日志记录",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "pkg server.js --target node20-win-x64 --output dist/CBWebSocketServer.exe"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^5.12.0"
+  },
+  "pkg": {
+    "assets": [
+      "config.json",
+      "cacerts/**"
+    ],
+    "targets": [
+      "node20-win-x64"
+    ]
+  }
+}
